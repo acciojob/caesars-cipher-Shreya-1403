@@ -35,10 +35,10 @@ function rot13(str) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
 	for (let i = 0; i < str.length; i++) {
-		if (lookup[str[i]]===undefined) {
-			decodedArr.push(str[i]);
+		if(str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90){
+		decodedArr=lookup.str.charAt(i);
 		}
-		decodedArr.push(lookup[str[i]]);
+		decodedArr+=str[i];
 	}
 
   return decodedArr; //return decodedArr
