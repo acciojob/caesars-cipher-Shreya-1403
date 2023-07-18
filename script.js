@@ -36,7 +36,7 @@ function rot13(str) {
   // Only change code below this line
 	for (let i = 0; i < str.length; i++) {
 		if(str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90){
-		decodedArr=lookup.str.charAt(i);
+		decodedArr=lookup.str(i);
 		}
 		decodedArr+=str[i];
 	}
